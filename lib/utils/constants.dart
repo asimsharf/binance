@@ -22,3 +22,12 @@ class Constance {
     ),
   );
 }
+
+// Create Singleton Class
+class Singleton {
+  static Singleton _instance = Singleton();
+  factory Singleton() => _instance;
+  Singleton._internal();
+  static Singleton get instance => _instance;
+  static set instance(Singleton instance) => _instance = instance;
+}
